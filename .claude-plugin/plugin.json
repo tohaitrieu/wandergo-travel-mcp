@@ -23,5 +23,6 @@
       "type": "http",
       "url": "https://mcp.wandergo.vn/mcp"
     }
-  }
+  },
+  "privacyPolicyUrl": "https://wandergo.vn/en/privacy/"
 }
