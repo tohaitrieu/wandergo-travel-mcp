@@ -81,7 +81,6 @@ The plugin adds the `wandergo` MCP server and the `wandergo` skill. The first ti
 ```
 .claude-plugin/marketplace.json   marketplace "wandergo-travel-mcp" listing plugin "wandergo-travel"
 .claude-plugin/plugin.json        plugin manifest + remote MCP server (HTTP, OAuth — no keys)
-.claude-plugin/icon.png           plugin icon
 skills/wandergo/                  agent skill (SKILL.md + reference/tools.md) — canonical copy
 ```
 
