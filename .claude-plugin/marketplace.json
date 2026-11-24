@@ -2,13 +2,13 @@
   "name": "wandergo-travel-mcp",
   "description": "WanderGo travel tools for Vietnam: events, meetups (kèo), trips and itinerary templates",
   "owner": {
-    "name": "WanderGo",
+    "name": "WanderGo.vn",
     "url": "https://wandergo.vn",
     "email": "hello@wandergo.vn"
   },
   "plugins": [
     {
-      "name": "wandergo",
+      "name": "wandergo-travel",
       "source": "./",
       "description": "Find events, meetups, trips and itinerary templates in Vietnam; host meetups, create trips, check in and review on WanderGo"
     }

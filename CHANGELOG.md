@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.0 — 2026-11-25
+
+- Plugin renamed `wandergo-travel` (install: `claude plugin install wandergo-travel@wandergo-travel-mcp`).
+- Remote MCP server declared in `plugin.json` (`mcpServers.wandergo`, HTTP, OAuth).
+- Plugin icon added; build scripts removed (zip `skills/wandergo` by hand for Claude.ai upload).
+
 ## 0.3.0 — 2026-11-24
 
 - Plugin `wandergo` (marketplace `wandergo-travel-mcp`) with the remote MCP server `https://mcp.wandergo.vn/mcp`.

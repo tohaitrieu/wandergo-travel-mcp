@@ -19,7 +19,7 @@ Remote MCP server: `https://mcp.wandergo.vn/mcp` (Streamable HTTP, OAuth 2.1 for
 
 ```
 /plugin marketplace add tohaitrieu/wandergo-travel-mcp
-/plugin install wandergo@wandergo-travel-mcp
+/plugin install wandergo-travel@wandergo-travel-mcp
 ```
 
 Plugin thêm máy chủ MCP `wandergo` và skill `wandergo`. Lần đầu cần tạo / tham gia gì đó, chạy `/mcp` để đăng nhập WanderGo.
@@ -27,7 +27,7 @@ Plugin thêm máy chủ MCP `wandergo` và skill `wandergo`. Lần đầu cần 
 **Claude (web · Desktop · mobile)**
 
 1. Cài đặt → Connectors → Add custom connector → URL `https://mcp.wandergo.vn/mcp`.
-2. Skill (tuỳ chọn): chạy `make skill-zip` (hoặc `scripts/build-skill-zip.sh`) rồi tải `dist/wandergo-skill.zip` lên Cài đặt → Capabilities → Skills.
+2. Skill (tuỳ chọn): tải repo (Code → Download ZIP), nén riêng thư mục `skills/wandergo` thành `wandergo.zip` rồi tải lên Cài đặt → Capabilities → Skills.
 
 **ChatGPT, Gemini CLI, Cursor, VS Code, Devin Desktop, Zed, SDK** — hướng dẫn từng ứng dụng: https://wandergo.vn/travel-mcp/
 
@@ -54,7 +54,7 @@ Plugin thêm máy chủ MCP `wandergo` và skill `wandergo`. Lần đầu cần 
 
 ```
 /plugin marketplace add tohaitrieu/wandergo-travel-mcp
-/plugin install wandergo@wandergo-travel-mcp
+/plugin install wandergo-travel@wandergo-travel-mcp
 ```
 
 The plugin adds the `wandergo` MCP server and the `wandergo` skill. The first time an action needs your account, run `/mcp` to sign in to WanderGo.
@@ -62,7 +62,7 @@ The plugin adds the `wandergo` MCP server and the `wandergo` skill. The first ti
 **Claude (web · Desktop · mobile)**
 
 1. Settings → Connectors → Add custom connector → URL `https://mcp.wandergo.vn/mcp`.
-2. Skill (optional): run `make skill-zip` (or `scripts/build-skill-zip.sh`) and upload `dist/wandergo-skill.zip` under Settings → Capabilities → Skills.
+2. Skill (optional): download the repo (Code → Download ZIP), zip the `skills/wandergo` folder on its own as `wandergo.zip` and upload it under Settings → Capabilities → Skills.
 
 **ChatGPT, Gemini CLI, Cursor, VS Code, Devin Desktop, Zed, SDKs** — per-app setup: https://wandergo.vn/travel-mcp/
 
@@ -79,11 +79,10 @@ The plugin adds the `wandergo` MCP server and the `wandergo` skill. The first ti
 ## Repository layout
 
 ```
-.claude-plugin/marketplace.json   marketplace "wandergo-travel-mcp" listing plugin "wandergo"
-.claude-plugin/plugin.json        plugin manifest
-.mcp.json                         remote MCP server (HTTP, OAuth — no keys)
+.claude-plugin/marketplace.json   marketplace "wandergo-travel-mcp" listing plugin "wandergo-travel"
+.claude-plugin/plugin.json        plugin manifest + remote MCP server (HTTP, OAuth — no keys)
+.claude-plugin/icon.png           plugin icon
 skills/wandergo/                  agent skill (SKILL.md + reference/tools.md) — canonical copy
-scripts/build-skill-zip.sh        builds dist/wandergo-skill.zip for Claude.ai upload
 ```
 
 Check before publishing: `claude plugin validate .`

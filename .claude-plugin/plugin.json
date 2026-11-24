@@ -1,10 +1,9 @@
 {
-  "name": "wandergo",
-  "displayName": "WanderGo",
-  "version": "0.3.0",
-  "description": "WanderGo MCP connector + skill: find cultural events, open meetups (kèo), group trips, itinerary templates, destinations and local guides in Vietnam; host or join meetups, create trips, check in and review with your WanderGo account (OAuth).",
+  "name": "wandergo-travel",
+  "version": "0.4.0",
+  "description": "Vietnam travel companion for Claude: find cultural events, open meetups (kèo), group trips, itinerary templates, destinations and local guides; host or join meetups, create trips, log trip expenses, check in and review with your WanderGo account (OAuth).",
   "author": {
-    "name": "WanderGo",
+    "name": "WanderGo.vn",
     "url": "https://wandergo.vn",
     "email": "hello@wandergo.vn"
   },
@@ -19,8 +18,14 @@
     "itinerary",
     "mcp"
   ],
-  "documentationUrl": "https://wandergo.vn/travel-mcp/",
+  "mcpServers": {
+    "wandergo": {
+      "type": "http",
+      "url": "https://mcp.wandergo.vn/mcp"
+    }
+  },
+  "documentationUrl": "https://wandergo.vn/en/travel-mcp/",
   "supportUrl": "https://wandergo.vn/lien-he/",
-  "privacyPolicyUrl": "https://wandergo.vn/privacy/",
+  "privacyPolicyUrl": "https://wandergo.vn/en/privacy/",
   "termsOfServiceUrl": "https://wandergo.vn/dieu-khoan/"
 }
