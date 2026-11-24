@@ -1,0 +1,26 @@
+{
+  "name": "wandergo",
+  "displayName": "WanderGo",
+  "version": "0.3.0",
+  "description": "WanderGo MCP connector + skill: find cultural events, open meetups (kèo), group trips, itinerary templates, destinations and local guides in Vietnam; host or join meetups, create trips, check in and review with your WanderGo account (OAuth).",
+  "author": {
+    "name": "WanderGo",
+    "url": "https://wandergo.vn",
+    "email": "hello@wandergo.vn"
+  },
+  "homepage": "https://wandergo.vn/travel-mcp/",
+  "repository": "https://github.com/tohaitrieu/wandergo-travel-mcp",
+  "license": "MIT",
+  "keywords": [
+    "travel",
+    "vietnam",
+    "events",
+    "meetups",
+    "itinerary",
+    "mcp"
+  ],
+  "documentationUrl": "https://wandergo.vn/travel-mcp/",
+  "supportUrl": "https://wandergo.vn/lien-he/",
+  "privacyPolicyUrl": "https://wandergo.vn/privacy/",
+  "termsOfServiceUrl": "https://wandergo.vn/dieu-khoan/"
+}
