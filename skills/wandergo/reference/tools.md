@@ -2,7 +2,7 @@
 
 Server: `https://mcp.wandergo.vn/mcp` (Streamable HTTP). All tools accept `language: "vi" | "en"` (default `vi`). `?` = optional. Every result includes `url` (wandergo.vn page).
 
-## Public (no sign-in, read-only)
+## Discovery (read-only; WanderGo sign-in required like every tool)
 
 **search_events** — upcoming cultural events.
 `place?` (2–80 chars; filters to that province), `type?` (`culture_arts | exhibition | sports | community`), `when?` (`today | weekend | month | upcoming`), `from?`/`to?` (`YYYY-MM-DD`, override `when`), `limit?` (1–20, default 10).

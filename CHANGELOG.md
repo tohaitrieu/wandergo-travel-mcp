@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0 — 2026-11-25
+
+- The connector now requires WanderGo sign-in (OAuth) for every tool, including search; docs and skill updated. Also listed in Claude's directory: https://claude.ai/directory/wandergo.
+
 ## 0.4.0 — 2026-11-25
 
 - Plugin renamed `wandergo-travel` (install: `claude plugin install wandergo-travel@wandergo-travel-mcp`).

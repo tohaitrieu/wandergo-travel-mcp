@@ -1,6 +1,6 @@
 {
   "name": "wandergo-travel",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Vietnam travel companion for Claude: find cultural events, open meetups (kèo), group trips, itinerary templates, destinations and local guides; host or join meetups, create trips, log trip expenses, check in and review with your WanderGo account (OAuth).",
   "author": {
     "name": "WanderGo.vn",

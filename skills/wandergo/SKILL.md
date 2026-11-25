@@ -5,7 +5,7 @@ description: Find and act on WanderGo travel content in Vietnam through the Wand
 
 # WanderGo
 
-WanderGo (wandergo.vn) is a Vietnamese travel-companion app. Its MCP connector has public discovery tools (no sign-in) and account tools (OAuth sign-in, act as the user). Exact parameters: [reference/tools.md](reference/tools.md).
+WanderGo (wandergo.vn) is a Vietnamese travel-companion app. Its MCP connector requires the user to sign in to WanderGo (OAuth) for every tool: read-only discovery tools and account tools that act as the user. Exact parameters: [reference/tools.md](reference/tools.md).
 
 ## Pick the tool
 
@@ -44,7 +44,7 @@ Account tools publish under the user's name (or their meetup alias) and are visi
 1. Collect the required fields (see reference). Ask for missing ones in one short question; never invent times, places or prices.
 2. Show a one-line summary and get an explicit yes — vi: "Lên kèo «Cafe sáng» 9:00 thứ Bảy 28/11 tại Cafe Giảng, tối đa 4 người — mình đăng nhé?" · en: "Create the meetup "Morning coffee" at Cafe Giảng, Sat 28 Nov 9:00, up to 4 people — shall I post it?"
 3. Call once. `status: "already_done"` means the same request was already applied; do not repeat it.
-4. The first account call may trigger WanderGo sign-in; let the user finish it, the call resumes.
+4. Every tool needs a WanderGo sign-in. If a call returns 401 or the connector asks to connect, let the user finish sign-in, then retry.
 
 Errors are readable text (plan limits, moderation, daily limits for AI-created content, "already checked in today"). Relay them plainly; suggest the app or web when a limit is hit; never retry around a limit.
 

@@ -10,8 +10,8 @@ Remote MCP server: `https://mcp.wandergo.vn/mcp` (Streamable HTTP, OAuth 2.1 for
 
 **WanderGo** là ứng dụng tìm bạn đồng hành du lịch ở Việt Nam. Plugin này cho trợ lý AI:
 
-- **Tìm (không cần đăng nhập):** sự kiện văn hoá, kèo (cafe, bia, trà đá, chụp ảnh…), lịch trình mẫu, chuyến đi công khai, địa danh (mùa đẹp, khí hậu), thổ địa, bài cộng đồng, cẩm nang.
-- **Làm thay bạn (đăng nhập WanderGo qua OAuth):** lên kèo, vô kèo, báo đi, tạo chuyến đi hoặc chép lịch trình mẫu, check-in, đánh giá, lưu sự kiện. Trợ lý luôn xác nhận với bạn trước khi đăng.
+- **Tìm (đọc, cần đăng nhập WanderGo qua OAuth):** sự kiện văn hoá, kèo (cafe, bia, trà đá, chụp ảnh…), lịch trình mẫu, chuyến đi công khai, địa danh (mùa đẹp, khí hậu), thổ địa, bài cộng đồng, cẩm nang.
+- **Làm thay bạn (cùng một lần đăng nhập):** lên kèo, vô kèo, báo đi, tạo chuyến đi hoặc chép lịch trình mẫu, check-in, đánh giá, lưu sự kiện. Trợ lý luôn xác nhận với bạn trước khi đăng.
 
 ### Cài đặt
 
@@ -22,7 +22,7 @@ Remote MCP server: `https://mcp.wandergo.vn/mcp` (Streamable HTTP, OAuth 2.1 for
 /plugin install wandergo-travel@wandergo-travel-mcp
 ```
 
-Plugin thêm máy chủ MCP `wandergo` và skill `wandergo`. Lần đầu cần tạo / tham gia gì đó, chạy `/mcp` để đăng nhập WanderGo.
+Plugin thêm máy chủ MCP `wandergo` và skill `wandergo`. Mọi công cụ cần đăng nhập WanderGo: lần đầu chạy `/mcp` để đăng nhập.
 
 **Claude (web · Desktop · mobile)**
 
@@ -45,8 +45,8 @@ Plugin thêm máy chủ MCP `wandergo` và skill `wandergo`. Lần đầu cần 
 
 **WanderGo** is a travel-companion app for Vietnam. This plugin lets an AI assistant:
 
-- **Find (no sign-in):** cultural events, meetups ("kèo": coffee, beer, street tea, photo walks…), itinerary templates, public trips, destinations (best months, climate), local guides, community posts, travel guides.
-- **Act for you (WanderGo sign-in via OAuth):** host or join meetups, RSVP, create a trip or copy a template, check in, review, save events. The assistant confirms with you before posting.
+- **Find (read-only, WanderGo sign-in via OAuth required):** cultural events, meetups ("kèo": coffee, beer, street tea, photo walks…), itinerary templates, public trips, destinations (best months, climate), local guides, community posts, travel guides.
+- **Act for you (same sign-in):** host or join meetups, RSVP, create a trip or copy a template, check in, review, save events. The assistant confirms with you before posting.
 
 ### Install
 
@@ -57,7 +57,7 @@ Plugin thêm máy chủ MCP `wandergo` và skill `wandergo`. Lần đầu cần 
 /plugin install wandergo-travel@wandergo-travel-mcp
 ```
 
-The plugin adds the `wandergo` MCP server and the `wandergo` skill. The first time an action needs your account, run `/mcp` to sign in to WanderGo.
+The plugin adds the `wandergo` MCP server and the `wandergo` skill. Every tool needs a WanderGo sign-in: run `/mcp` the first time to sign in.
 
 **Claude (web · Desktop · mobile)**
 
