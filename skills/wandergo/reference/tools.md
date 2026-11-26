@@ -29,7 +29,9 @@ Returns `templates[{ slug, title, days, destination, province, from, styles, bud
 
 **search_local_guides** — `province?`, `limit?` → `guides[{ name, tagline, specialties, areas, verified, rating, url }]` (no contact details).
 
-**search_guides** — `query` → WanderGo travel articles (cẩm nang) `guides[{ title, meta, url }]`. **search_wandergo** — `query` → grouped hits: meetups, events, trips, places, localGuides, posts, guides.
+**search_guides** — `query` → WanderGo travel articles (cẩm nang) `guides[{ title, meta, url }]`. **search_wandergo** — `query` → grouped hits: meetups, events, trips, places, localGuides, posts, guides, help.
+
+**search_help** — `query` (optional; a general one like "hướng dẫn sử dụng WanderGo" or empty → `overview: true` + every article), `limit` → user-guide articles `articles[{ section, sectionTitle, slug, title, summary, url }]`. **get_help_article** — `url` or `section` + `slug` → `{ title, summary, url, content }` (full article as light markdown: steps, tips, FAQ).
 
 ## Account (OAuth sign-in; acts as the user)
 

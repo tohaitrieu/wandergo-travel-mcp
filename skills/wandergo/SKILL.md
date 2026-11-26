@@ -21,6 +21,7 @@ WanderGo (wandergo.vn) is a Vietnamese travel-companion app. Its MCP connector r
 | A local host | `search_local_guides` |
 | A trip leader for an area ("trưởng đoàn hay dẫn Hà Giang") | `search_trip_leads` → join one of their `upcomingTrips` or open the profile `url` (no direct contact) |
 | Real experiences / tips | `search_posts` (community) · `search_guides` (WanderGo articles) |
+| How to use WanderGo ("hướng dẫn sử dụng", "làm sao tạo kèo?", "kết nối Claude thế nào?") | `search_help` (general query → full table of contents) → `get_help_article`; answer from the article, link its `url` |
 | Go to an event with others | `get_event` → its `meetups[]`; none fit → offer `create_meetup` with `eventSlug` |
 | Host / join / RSVP a meetup | `create_meetup` · `join_meetup` · `rsvp_next` |
 | Check in · review · save | `check_in` · `post_review` · `save_event` |

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.0 — 2026-11-26
+
+- New tools `search_help` and `get_help_article`: the official WanderGo user guide (hướng dẫn sử dụng) — accounts, meetups, events, trips, travel buddies, safety, connecting AI assistants, FAQ. `search_wandergo` also returns `help` hits. Skill routes "how do I…" questions to them.
+
 ## 0.5.0 — 2026-11-25
 
 - The connector now requires WanderGo sign-in (OAuth) for every tool, including search; docs and skill updated. Also listed in Claude's directory: https://claude.ai/directory/wandergo.
